@@ -1,0 +1,11 @@
+<h2>In progress</h2>
+<table class="table table-bordered table-hover">
+    <ng-container *ngFor="let item of dataService.allRecords">
+        <tr *ngIf="!item.done">
+            <td>{{item.name}}</td>
+            <td>{{item.toDo}}</td>
+            <td>{{item.time}}</td>
+            <td><input type="checkbox" [(ngModel)]="item.done"></td>
+        </tr>
+    </ng-container>
+</table>

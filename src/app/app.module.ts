@@ -5,10 +5,15 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import {DataService} from "./services/data.service";
+import { ListsComponent } from './lists/lists.component';
+import { DoneComponent } from './done/done.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListsComponent,
+    DoneComponent
   ],
   imports: [
     BrowserModule,
@@ -16,7 +21,7 @@ import { AppComponent } from './app.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
