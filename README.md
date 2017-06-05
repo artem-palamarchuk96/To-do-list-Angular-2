@@ -1,3 +1,3 @@
 # ToDoList
 
-This is simple to do list width AngularJS
+This is simple to do list using AngularJS
